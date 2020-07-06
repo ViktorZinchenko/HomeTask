@@ -27,8 +27,8 @@ public class AdSteps {
     }
 
     @Then("favorites counter shows {int} added products")
-    public void favoritesCounterShowsAddedProducts(int quantity) {
-        adPage.checkFavoritesCounterQuantity(quantity);
+    public void favoritesCounterShowsAddedProducts(int ad) {
+        adPage.checkFavoritesCounterQuantity(ad);
     }
 
     @Then("add to favorites button have a name {string}")

@@ -30,8 +30,8 @@ public class AdPage {
         addToFavoritesButton.shouldHave(text(text));
     }
 
-    public void checkFavoritesCounterQuantity(int quantity) {
-        favoritesCounter.shouldHave(text(String.valueOf(quantity)));
+    public void checkFavoritesCounterQuantity(int ad) {
+        favoritesCounter.shouldHave(text(String.valueOf(ad)));
     }
 
 }

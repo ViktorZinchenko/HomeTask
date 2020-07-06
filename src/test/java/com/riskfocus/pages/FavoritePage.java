@@ -12,8 +12,8 @@ public class FavoritePage {
     private ElementsCollection adsList = $$(".table_ver1 tr");
     private SelenideElement clearAllButton = $(byAttribute("value", "Очистить список"));
 
-    public void checkQuantityOfFavorites(int quantity) {
-        adsList.shouldHaveSize(quantity);
+    public void checkQuantityOfFavorites(int ad) {
+        adsList.shouldHaveSize(ad);
     }
     public void clickClearAllButton() throws InterruptedException {
         sleep(5000);

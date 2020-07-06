@@ -7,8 +7,8 @@ import static com.riskfocus.Runner.favoritePage;
 public class FavoriteSteps {
 
     @Then("in favorites {int} ads")
-    public void inFavoritesAds(int quantity) {
-        favoritePage.checkQuantityOfFavorites(quantity);
+    public void inFavoritesAds(int ad) {
+        favoritePage.checkQuantityOfFavorites(ad);
     }
 
     @When("click on the clear button")
