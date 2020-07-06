@@ -26,8 +26,12 @@ public class Runner {
     @BeforeClass
     public static void init() {
         Configuration.browser = "chrome";
-        Configuration.browserSize = "1280x720";
-        Configuration.timeout = 30 * 1000;
+        Configuration.browserSize = "1920x1080";
+        Configuration.timeout = 60 * 1000;
+        setupPages();
+    }
+
+    private static void setupPages() {
         mainPage = new MainPage();
         categoryPage = new CategoryPage();
         subCategoryPage = new SubCategoryPage();
